@@ -3,11 +3,12 @@ package encommand;
 option go_package = "enbuffer/cmd";
 
 message Command {
-  int32 Opa = 1;
-  int32 Opb = 2;  
-  int32 Opc = 3;
+  string Name = 1;
+  int32 Opa = 2;
+  int32 Opb = 3;  
+  int32 Opc = 4;
 }
 
 message CommandList {
-  repeated Command cmd = 1;
+  repeated Command Cmd = 1;
 }
